@@ -14,8 +14,8 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <style>
-        .gnb > li .sub_dpblock > * {display:none;}
-        .lang_dpblock > * {display:none;}
+        /* .gnb > li .sub_dpblock > * {display:none;} */
+        /* .lang_dpblock > * {display:none;} */
     </style>
 </head>
 <body>
@@ -187,8 +187,7 @@
                             <li><a href="#">ABC</a></li>
                         </ul>
                         <div class="sub_rht">
-                            <a href="#"><img src="./images/sub_img_ac1.jpg" alt="뉴 페런트 백팩 17L"></a>
-                            <a href="#"><img src="./images/sub_img_ac2.jpg" alt="우먼스 볼러 햇 소프트"></a>
+                            <a href="#"><img src="./images/sub_img_co.jpg" alt="룰루레몬 커뮤니티"></a>
                         </div>
                     </div> <!-- e:액세서리 서브메뉴 -->
                 </li>
@@ -209,22 +208,22 @@
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav> <!-- e:nav -->
     </header> <!-- e:header -->
     <main>
-        <div class="swiper-container">
+        <div class="swiper" id="m_bnr_g">
             <div class="swiper-wrapper">
-                <div class="swiper-slide slide1">
+                <div class="swiper-slide m_bnr1">
                     <h1>WovenAir™ 원단의
                         탁월한 통기성</h1>
                     <p>놀라울 만큼 시원한 착용감</p>
                 </div>
-                <div class="swiper-slide slide2">
+                <div class="swiper-slide m_bnr2">
                     <h1>WovenAir™ 원단의
                         탁월한 통기성</h1>
                     <p>놀라울 만큼 시원한 착용감</p>
                 </div>
-                <div class="swiper-slide slide3">
+                <div class="swiper-slide m_bnr3">
                     <h1>WovenAir™ 원단의
                         탁월한 통기성</h1>
                     <p>놀라울 만큼 시원한 착용감</p>
@@ -235,14 +234,14 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
             <div class="swiper-scrollbar"></div>
-        </div>
+        </div> <!-- e:m_bnr_g -->
         <div class="content series">
-            <h2>시리즈</h2>
-            <ul class="tab_gender">
-                <li class="tab_gender_w"><a href="#">여성</a>
+            <h2 class="sub_tlt">시리즈</h2>
+            <ul class="tab_gender_g">
+                <li class="tab_gender w"><a href="#">여성</a>
                     <div class="series_g">
                         <a href="#" class="series_cont">
-                            <h3 class="series1"><strong>Summer</strong><br>Collection</h3>
+                            <h3 class="bg_txt"><strong>Summer</strong><br>Collection</h3>
                             <p>부드러운 착용감과 탁월한 신축성, 상큼한 스타일까지 더한 여름 콜렉션</p>
                         </a>
                         <a href="#" class="series_cont">
@@ -255,10 +254,10 @@
                         </a>
                     </div>
                 </li> <!-- e:여성 -->
-                <li class="tab_gender_m"><a href="#">남성</a>
+                <li class="tab_gender m"><a href="#">남성</a>
                     <div class="series_g">
                         <a href="#" class="series_cont">
-                            <h3 class="series1"><strong>Summer</strong><br>Collection</h3>
+                            <h3 class="bg_txt"><strong>Summer</strong><br>Collection</h3>
                             <p>달라붙지 않는 디자인과 통기성 소재로 시원한 여름을 보낼 수 있는 콜렉션</p>
                         </a>
                         <a href="#" class="series_cont">
@@ -274,33 +273,33 @@
             </ul>
         </div> <!-- e:content series -->
         <div class="content online">
-            <div class="swiper-container">
+            <div class="swiper" id="online_only_g">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide slide1">
                         <section class="online_txt">
-                            <h2>온라인 단독</h2>
-                            <h3>댄스 스튜디오 하이라이즈 쇼츠 3.5”</h3>
+                            <h2 class="sub_tlt">온라인 단독</h2>
+                            <h3 class="itm_tlt">댄스 스튜디오 하이라이즈 쇼츠 3.5”</h3>
                             <p>운동 후에도 입기 좋은 댄스 스튜디오 하이라이즈<br>
-                                스위프트 원단과 달라 붙지 않는 쇼츠 조거로 시원한 착용감</p>
-                            <a href="#" class="view_btn">VIEW MORE</a>
+                                시원한 착용감의 스위프트 원단으로 달라 붙지 않는 쇼츠 조거</p>
+                            <a href="#" class="view_btn">VIEW MORE<img src="./images/view_more_plust.svg" alt=""></a>
                         </section>
                         <p class="online_img"><img src="./images/online_img1.jpg" alt=""></p>
                     </div>
                     <div class="swiper-slide slide2">
                         <section class="online_txt">
-                            <h3>울 블렌드 풀집 후디</h3>
+                            <h3 class="itm_tlt">울 블렌드 풀집 후디</h3>
                             <p>체온 조절 기능이 있는 울 혼방 원단을 사용한<br>
-                                가벼운 착용감의 후디</p>
-                            <a href="#" class="view_btn">VIEW MORE</a>
+                                가벼운 착용감의 풀집 후디</p>
+                            <a href="#" class="view_btn">VIEW MORE<img src="./images/view_more_plust.svg" alt=""></a>
                         </section>
                         <p class="online_img"><img src="./images/online_img2.jpg" alt=""></p>
                     </div>
                     <div class="swiper-slide slide3">
                         <section class="online_txt">
-                            <h3>스쿠바 오버사이즈드 퍼넬넥 하프집</h3>
+                            <h3 class="itm_tlt">스쿠바 오버사이즈드 퍼넬넥 하프집</h3>
                             <p>운동 전후에 최상의 편안함을 느낄 수 있는<br>
-                                오버사이즈 핏 퍼넬넥 스쿠바 후디</p>
-                            <a href="#" class="view_btn">VIEW MORE</a>
+                                오버사이즈 핏의 퍼넬넥 스쿠바 후디</p>
+                            <a href="#" class="view_btn">VIEW MORE<img src="./images/view_more_plust.svg" alt=""></a>
                         </section>
                         <p class="online_img"><img src="./images/online_img3.jpg" alt=""></p>
                     </div>
@@ -310,10 +309,201 @@
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-scrollbar"></div>
-            </div>
-        </div>
+            </div> <!-- e:online_only_g -->
+        </div> <!-- e:content online -->
         <div class="content new">
             <a href="#"><img src="./images/new_img.jpg" alt="new"></a>
+            <section class="itm_g">
+                <h2 class="sub_tlt">신상품</h2>
+                <div id="grid_container">
+                    <a href="#" class="itm itm1">
+                        <p class="itm_img"><img src="./images/new_itm_img1.jpg" alt=""></p>
+                        <h3 class="itm_tlt">신치 헴 헤비웨이트 코튼 드레스</h3>
+                        <p class="itm_price">138,000</p>
+                    </a>
+                    <a href="#" class="itm itm2">
+                        <p class="itm_img"><img src="./images/new_itm_img2.jpg" alt=""></p>
+                        <h3 class="itm_tlt">Nulu 요가 슬리브리스 셔츠</h3>
+                        <p class="itm_price">109,000</p>
+                    </a>
+                    <a href="#" class="itm itm3">
+                        <p class="itm_img"><img src="./images/new_itm_img3.jpg" alt=""></p>
+                        <h3 class="itm_tlt">그루브 슈퍼 하이라이즈 플레어드 팬츠 Nulu 아시아 핏</h3>
+                        <p class="itm_price">110,000 ~ 138,000</p>
+                    </a>
+                    <a href="#" class="itm itm4">
+                        <p class="itm_img"><img src="./images/new_itm_img4.jpg" alt=""></p>
+                        <h3 class="itm_tlt">더 라이트웨이트 매트 5mm 얼라인먼트</h3>
+                        <p class="itm_price">125,000</p>
+                    </a>
+                </div>
+            </section> <!-- e:itm_g -->
+        </div> <!-- e:content new -->
+        <div class="content bst_sell">
+            <h2 class="sub_tlt">베스트 셀러</h2>
+            <div class="swiper" id="bst_sell_g">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#" class="itm">
+                            <p class="itm_img"><img src="./images/bst_itm_img1.jpg" alt=""></p>
+                            <h3 class="itm_tlt">룰루레몬 Align™ 리브드 하이라이즈 팬츠 24" 아시아 핏</h3>
+                            <p class="itm_price">169,000 ~ 278,000</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="itm">
+                            <p class="itm_img"><img src="./images/bst_itm_img2.jpg" alt=""></p>
+                            <h3 class="itm_tlt">디파인 재킷 Nulu</h3>
+                            <p class="itm_price">184,000</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="itm">
+                            <p class="itm_img"><img src="./images/bst_itm_img3.jpg" alt=""></p>
+                            <h3 class="itm_tlt">셔드 Nulu 미디 탱크 드레스</h3>
+                            <p class="itm_price">97,000 ~ 138,000</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="itm">
+                            <p class="itm_img"><img src="./images/bst_itm_img4.jpg" alt=""></p>
+                            <h3 class="itm_tlt">메탈 벤트 테크 숏슬리브 셔츠 업데이트 핏</h3>
+                            <p class="itm_price">93,000</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="itm">
+                            <p class="itm_img"><img src="./images/bst_itm_img5.jpg" alt=""></p>
+                            <h3 class="itm_tlt">페이스 브레이커 라이너리스 쇼츠 7"</h3>
+                            <p class="itm_price">65,000 ~ 93,000</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="itm">
+                            <p class="itm_img"><img src="./images/bst_itm_img6.jpg" alt=""></p>
+                            <h3 class="itm_tlt">스쿠바 오버사이즈드 풀집</h3>
+                            <p class="itm_price">147,000 ~ 184,000</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="itm">
+                            <p class="itm_img"><img src="./images/bst_itm_img7.jpg" alt=""></p>
+                            <h3 class="itm_tlt">원더 트레인 스트래피 레이서 브라 라이트 서포트, A/B컵</h3>
+                            <p class="itm_price"><del class="price_cancle">78,000</del>55,000</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="itm">
+                            <p class="itm_img"><img src="./images/bst_itm_img8.jpg" alt=""></p>
+                            <h3 class="itm_tlt">에볼루션 코튼 피케 폴로 셔츠</h3>
+                            <p class="itm_price">88,000 ~ 125,000</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="itm">
+                            <p class="itm_img"><img src="./images/bst_itm_img9.jpg" alt=""></p>
+                            <h3 class="itm_tlt">원더러스트 백팩 25L</h3>
+                            <p class="itm_price">198,000</p>
+                        </a>
+                    </div>
+                </div>
+                <!--필요 시 사용(선택)-->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div> <!-- e:content bst_sell -->
+        <div class="content event_section">
+            <div class="swiper" id="event_bnr_g"> <!-- position:relative -->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <section class="bnr_txt">
+                            <h2 class="bnr_tlt">빨라진 배송 시스템</h2>
+                            <p class="bnr_txt">국내 배송으로<br>
+                                더 빨라진 무료 배송을 만나보세요!</p>
+                        </section>
+                        <p><img src="./images/event_bnr_img1.png" alt=""></p>
+                    </div>
+                    <div class="swiper-slide">
+                        <section class="bnr_txt">
+                            <h2 class="bnr_tlt">무료 배송 시스템</h2>
+                            <p class="bnr_txt">무료 배송으로<br>
+                                더 합리적인 가격에 만나보세요!</p>
+                        </section>
+                        <p><img src="./images/event_bnr_img1.png" alt=""></p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div> <!-- e:content event_section -->
+        <div class="content gift_coll">
+            <h2 class="sub_tlt">기프트 컬렉션</h2>
+            <div class="tab_menu">
+                <ul class="tab_gender_g">
+                    <li class="tab_gender w"><a href="#">여성</a>
+                    <li class="tab_gender m"><a href="#">남성</a>
+                </ul>
+                <ul class="tab_typ_g">
+                    <li class="tab_typ"><a href="#" class="all">전체</a></li>
+                    <li class="tab_typ"><a href="#" class="top">상의</a></li>
+                    <li class="tab_typ"><a href="#" class="btm">하의</a></li>
+                    <li class="tab_typ"><a href="#" class="acc">액세서리</a></li>
+                </ul>
+            </div> <!-- e:tab_menu -->
+            <div class="itm_container">
+                <div class="itm_g w">
+                    <div class="itm_g_w all">
+                        <a href="#" class="itm w top">
+                            <p class="itm_img"><img src="./images/gift_itm_w_top1.jpg" alt=""></p>
+                            <h3 class="itm_tlt">스쿠바 오버사이즈드 풀집</h3>
+                            <p class="itm_price"><del class="price_cancle">184,000</del>147,000</p>
+                        </a>
+                        <a href="#" class="itm w btm">
+                            <p class="itm_img"><img src="./images/gift_itm_w_btm3.jpg" alt=""></p>
+                            <h3 class="itm_tlt">룰루레몬 Align™ 하이라이즈 쇼츠 6”</h3>
+                            <p class="itm_price"><del class="price_cancle">78,000</del>62,000</p>
+                        </a>
+                        <a href="#" class="itm w top">
+                            <p class="itm_img"><img src="./images/gift_itm_w_top2.jpg" alt=""></p>
+                            <h3 class="itm_tlt">크롭 디파인 재킷 리브드 Nulu</h3>
+                            <p class="itm_price">129,000 ~ 184,000</p>
+                        </a>
+                        <a href="#" class="itm w acc">
+                            <p class="itm_img"><img src="./images/gift_itm_w_acc1.jpg" alt=""></p>
+                            <h3 class="itm_tlt">우먼스 Nulu 와이드 리버서블 헤드밴드</h3>
+                            <p class="itm_price">29,000</p>
+                        </a>
+                    </div>
+                </div> <!-- e:itm_g w -->
+                <div class="itm_g m">
+                    <div class="itm_g_m all">
+                        <a href="#" class="itm m top">
+                            <p class="itm_img"><img src="./images/gift_itm_m_top2.jpg" alt=""></p>
+                            <h3 class="itm_tlt">라이트웨이트 캠프 칼라 버튼업</h3>
+                            <p class="itm_price">138,000</p>
+                        </a>
+                        <a href="#" class="itm m acc">
+                            <p class="itm_img"><img src="./images/gift_itm_m_acc1.jpg" alt=""></p>
+                            <h3 class="itm_tlt">패스트 트랙 백 2.0 10L</h3>
+                            <p class="itm_price">109,000</p>
+                        </a>
+                        <a href="#" class="itm m top">
+                            <p class="itm_img"><img src="./images/gift_itm_m_top1.jpg" alt=""></p>
+                            <h3 class="itm_tlt">패스트 앤 프리 재킷</h3>
+                            <p class="itm_price">139,000 ~ 198,000</p>
+                        </a>
+                        <a href="#" class="itm m btm">
+                            <p class="itm_img"><img src="./images/gift_itm_m_btm1.jpg" alt=""></p>
+                            <h3 class="itm_tlt">ABC 클래식 핏 트라우저 30" Warpstreme</h3>
+                            <p class="itm_price">184,000</p>
+                        </a>
+                    </div>
+                </div> <!-- e:itm_g m -->
+            </div> <!-- e:itm_container -->
+            <a href="#" class="view_btn">VIEW MORE<img src="./images/view_more_plust.svg" alt=""></a>
         </div>
     </main>
 </body>
