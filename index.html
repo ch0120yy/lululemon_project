@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>룰루레몬 온라인 스토어 | 룰루레몬</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <style>
+        .gnb > li .sub_dpblock > * {display:none;}
+        .lang_dpblock > * {display:none;}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header_bnr"><a href="#" class="header_bnr_txt">뉴스레터를 구독하고 새로운 소식을 받으세요</a>
+            <a href="#" class="bnr_close"><img src="./images/icon_close.svg" alt="닫기"></a>
+        </div>
+        <h1 id="logo"><a href="#"><img src="./images/logo.png" alt="lululemon"></a></h1>
+        <nav>
+            <div class="sub_bg"></div>
+            <ul class="gnb">
+                <li><a href="#">여성</a>
+                    <div class="sub_dpblock">
+                        <ul class="sub_lft">
+                            <li><a href="#">신제품</a></li>
+                            <li><a href="#">컬렉션</a></li>
+                            <li><a href="#">베스트셀러</a></li>
+                            <li><a href="#">세일</a></li>
+                            <li><a href="#"><span>기프트</span></a></li>
+                            <li><a href="#">전체보기</a></li>
+                        </ul>
+                        <ul class="sub_mid">
+                            <li class="sub_1"><a href="#">액티비티</a><ul>
+                                <li><a href="#">요가&필라테스</a></li>
+                                <li><a href="#">러닝</a></li>
+                                <li><a href="#">트레이닝</a></li>
+                                <li><a href="#">테니스</a></li>
+                                <li><a href="#">골프</a></li>
+                                <li><a href="#">데일리웨어</a></li>
+                            </ul></li>
+                            <li class="sub_1"><a href="#">상의</a><ul>
+                                <li><a href="#">아우터</a></li>
+                                <li><a href="#">후디</a></li>
+                                <li><a href="#">롱슬리브</a></li>
+                                <li><a href="#">숏슬리브</a></li>
+                                <li><a href="#">스포츠브라</a></li>
+                                <li><a href="#">탱크</a></li>
+                            </ul></li>
+                            <li class="sub_1"><a href="#">하의</a><ul>
+                                <li><a href="#">레깅스</a></li>
+                                <li><a href="#">캐주얼 팬츠</a></li>
+                                <li><a href="#">조거</a></li>
+                                <li><a href="#">언더웨어</a></li>
+                            </ul></li>
+                            <li class="sub_1"><a href="#">액세서리</a><ul>
+                                <li><a href="#">가방</a></li>
+                                <li><a href="#">크로스바디백</a></li>
+                                <li><a href="#">요가 소도구</a></li>
+                                <li><a href="#">모자</a></li>
+                                <li><a href="#">여성 양말</a></li>
+                                <li><a href="#">헤어 액세서리</a></li>
+                                <li><a href="#">장갑</a></li>
+                            </ul></li>
+                        </ul> <!-- e:sub_mid -->
+                        <div class="sub_rht">
+                            <a href="#"><img src="./images/sub_img_w1.jpg" alt="얼라인 시리즈"></a>
+                            <a href="#"><img src="./images/sub_img_w2.jpg" alt="Bend This 시리즈"></a>
+                        </div>
+                    </div> <!-- e:여성 서브메뉴 -->
+                </li>
+                <li><a href="#">남성</a>
+                    <div class="sub_dpblock">
+                        <ul class="sub_lft">
+                            <li><a href="#">신제품</a></li>
+                            <li><a href="#">컬렉션</a></li>
+                            <li><a href="#">베스트셀러</a></li>
+                            <li><a href="#">세일</a></li>
+                            <li><a href="#"><span>기프트</span></a></li>
+                            <li><a href="#">전체보기</a></li>
+                        </ul>
+                        <ul class="sub_mid">
+                            <li class="sub_1"><a href="#">액티비티</a><ul>
+                                <li><a href="#">러닝</a></li>
+                                <li><a href="#">요가</a></li>
+                                <li><a href="#">골프</a></li>
+                                <li><a href="#">트레이닝</a></li>
+                                <li><a href="#">수영</a></li>
+                                <li><a href="#">테니스</a></li>
+                                <li><a href="#">하이킹</a></li>
+                                <li><a href="#">데일리웨어</a></li>
+                            </ul></li>
+                            <li class="sub_1"><a href="#">상의</a><ul>
+                                <li><a href="#">아우터</a></li>
+                                <li><a href="#">후디</a></li>
+                                <li><a href="#">롱슬리브</a></li>
+                                <li><a href="#">숏슬리브</a></li>
+                                <li><a href="#">폴로셔츠</a></li>
+                                <li><a href="#">셔츠</a></li>
+                                <li><a href="#">탱크</a></li>
+                            </ul></li>
+                            <li class="sub_1"><a href="#">하의</a><ul>
+                                <li><a href="#">팬츠</a></li>
+                                <li><a href="#">조거</a></li>
+                                <li><a href="#">타이츠</a></li>
+                                <li><a href="#">쇼츠</a></li>
+                                <li><a href="#">언더웨어</a></li>
+                            </ul></li>
+                            <li class="sub_1"><a href="#">액세서리</a><ul>
+                                <li><a href="#">가방</a></li>
+                                <li><a href="#">크로스바디백</a></li>
+                                <li><a href="#">요가 소도구</a></li>
+                                <li><a href="#">모자</a></li>
+                                <li><a href="#">남성 양말</a></li>
+                                <li><a href="#">장갑</a></li>
+                            </ul></li>
+                        </ul> <!-- e:sub_mid -->
+                        <div class="sub_rht">
+                            <a href="#"><img src="./images/sub_img_m1.jpg" alt="남성 데일리 웨어"></a>
+                            <a href="#"><img src="./images/sub_img_m2.jpg" alt="ABC 시리즈"></a>
+                        </div>
+                    </div> <!-- e:남성 서브메뉴 -->
+                </li>
+                <li><a href="#">액세서리</a>
+                    <div class="sub_dpblock">
+                        <ul class="sub_lft">
+                            <li><a href="#">신제품</a></li>
+                            <li><a href="#">컬렉션</a></li>
+                            <li><a href="#">베스트셀러</a></li>
+                            <li><a href="#">세일</a></li>
+                            <li><a href="#"><span>기프트</span></a></li>
+                            <li><a href="#">전체보기</a></li>
+                        </ul>
+                        <ul class="sub_mid">
+                            <li class="sub_1"><a href="#">가방</a><ul>
+                                <li><a href="#">백팩</a></li>
+                                <li><a href="#">크로스바디백</a></li>
+                            </ul></li>
+                            <li class="sub_1"><a href="#">여성</a><ul>
+                                <li><a href="#">여성 양말</a></li>
+                                <li><a href="#">헤어 액세서리</a></li>
+                            </ul></li>
+                            <li class="sub_1"><a href="#">남성</a><ul>
+                                <li><a href="#">남성 양말</a></li>
+                            </ul></li>
+                            <li class="sub_1"><a href="#">기타</a><ul>
+                                <li><a href="#">모자</a></li>
+                                <li><a href="#">요가 소도구</a></li>
+                                <li><a href="#">워터보틀</a></li>
+                                <li><a href="#">장갑</a></li>
+                            </ul></li>
+                        </ul> <!-- e:sub_mid -->
+                        <div class="sub_rht">
+                            <a href="#"><img src="./images/sub_img_ac1.jpg" alt="뉴 페런트 백팩 17L"></a>
+                            <a href="#"><img src="./images/sub_img_ac2.jpg" alt="우먼스 볼러 햇 소프트"></a>
+                        </div>
+                    </div> <!-- e:액세서리 서브메뉴 -->
+                </li>
+                <li><a href="#">커뮤니티</a>
+                    <div class="sub_dpblock">
+                        <ul class="sub_comm">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">문의하기</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">브랜드 스토리</a></li>
+                            <li><a href="#">지속가능성</a></li>
+                            <li><a href="#">사회공헌프로젝트</a></li>
+                        </ul>
+                        <ul class="sub_comm">
+                            <li><a href="#">사이즈가이드</a></li>
+                            <li><a href="#">기프트 카드</a></li>
+                            <li><a href="#">수선 안내</a></li>
+                        </ul>
+                        <ul class="sub_comm">
+                            <li><a href="#">시리즈</a></li>
+                            <li><a href="#">얼라인</a></li>
+                            <li><a href="#">룰루</a></li>
+                            <li><a href="#">메탈 벤트 테크</a></li>
+                            <li><a href="#">Bend This</a></li>
+                            <li><a href="#">ABC</a></li>
+                        </ul>
+                        <div class="sub_rht">
+                            <a href="#"><img src="./images/sub_img_ac1.jpg" alt="뉴 페런트 백팩 17L"></a>
+                            <a href="#"><img src="./images/sub_img_ac2.jpg" alt="우먼스 볼러 햇 소프트"></a>
+                        </div>
+                    </div> <!-- e:액세서리 서브메뉴 -->
+                </li>
+            </ul> <!-- e:gnb -->
+            <div class="lnb">
+                <a href="#" class="menu_search"><span>검색</span></a>
+                <a href="#" class="menu_offstore"><span>오프라인 매장 찾기</span></a>
+                <a href="#" class="menu_my"><span>마이메뉴</span></a>
+                <a href="#" class="menu_cart"><span>마이메뉴</span></a>
+                <div>
+                    <a href="#" class="menu_lang">KR / <em>&#8361;</em></a>
+                    <ul class="lang_dpblock">
+                        <li><a href="#">Korea (KRW)</a></li>
+                        <li><a href="#">Canada (CAD)</a></li>
+                        <li><a href="#">Europe (EUR)</a></li>
+                        <li><a href="#">Japan (JPY)</a></li>
+                        <li><a href="#">U.S (USD)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header> <!-- e:header -->
+    <main>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide1">
+                    <h1>WovenAir™ 원단의
+                        탁월한 통기성</h1>
+                    <p>놀라울 만큼 시원한 착용감</p>
+                </div>
+                <div class="swiper-slide slide2">
+                    <h1>WovenAir™ 원단의
+                        탁월한 통기성</h1>
+                    <p>놀라울 만큼 시원한 착용감</p>
+                </div>
+                <div class="swiper-slide slide3">
+                    <h1>WovenAir™ 원단의
+                        탁월한 통기성</h1>
+                    <p>놀라울 만큼 시원한 착용감</p>
+                </div>
+            </div>
+            <!--필요 시 사용(선택)-->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+        <div class="content series">
+            <h2>시리즈</h2>
+            <ul class="tab_gender">
+                <li class="tab_gender_w"><a href="#">여성</a>
+                    <div class="series_g">
+                        <a href="#" class="series_cont">
+                            <h3 class="series1"><strong>Summer</strong><br>Collection</h3>
+                            <p>부드러운 착용감과 탁월한 신축성, 상큼한 스타일까지 더한 여름 콜렉션</p>
+                        </a>
+                        <a href="#" class="series_cont">
+                            <h3 class="bg_txt">Align™ Collection</h3>
+                            <p>버터를 입은 것처럼 부드럽게 몸을 감싸주고 몸의 정렬을 잡아주는 얼라인 콜렉션</p>
+                        </a>
+                        <a href="#" class="series_cont">
+                            <h3 class="bg_txt">Bend This</h3>
+                            <p>앞뒤를 바꿔 자유롭게 레이어링을 할 수 있는 Bend This 언더웨어</p>
+                        </a>
+                    </div>
+                </li> <!-- e:여성 -->
+                <li class="tab_gender_m"><a href="#">남성</a>
+                    <div class="series_g">
+                        <a href="#" class="series_cont">
+                            <h3 class="series1"><strong>Summer</strong><br>Collection</h3>
+                            <p>달라붙지 않는 디자인과 통기성 소재로 시원한 여름을 보낼 수 있는 콜렉션</p>
+                        </a>
+                        <a href="#" class="series_cont">
+                            <h3 class="bg_txt">ABC Collection</h3>
+                            <p>ABC™ 설계를 적용해 상상 이상의 편안함을 주는 캐주얼 팬츠</p>
+                        </a>
+                        <a href="#" class="series_cont">
+                            <h3 class="bg_txt">Metal Vent Tech</h3>
+                            <p>심리스와 Silverescent™ 테크놀로지로 쾌적함을 느낄 수 있는 콜렉션</p>
+                        </a>
+                    </div>
+                </li> <!-- e:남성 -->
+            </ul>
+        </div> <!-- e:content series -->
+        <div class="content online">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1">
+                        <section class="online_txt">
+                            <h2>온라인 단독</h2>
+                            <h3>댄스 스튜디오 하이라이즈 쇼츠 3.5”</h3>
+                            <p>운동 후에도 입기 좋은 댄스 스튜디오 하이라이즈<br>
+                                스위프트 원단과 달라 붙지 않는 쇼츠 조거로 시원한 착용감</p>
+                            <a href="#" class="view_btn">VIEW MORE</a>
+                        </section>
+                        <p class="online_img"><img src="./images/online_img1.jpg" alt=""></p>
+                    </div>
+                    <div class="swiper-slide slide2">
+                        <section class="online_txt">
+                            <h3>울 블렌드 풀집 후디</h3>
+                            <p>체온 조절 기능이 있는 울 혼방 원단을 사용한<br>
+                                가벼운 착용감의 후디</p>
+                            <a href="#" class="view_btn">VIEW MORE</a>
+                        </section>
+                        <p class="online_img"><img src="./images/online_img2.jpg" alt=""></p>
+                    </div>
+                    <div class="swiper-slide slide3">
+                        <section class="online_txt">
+                            <h3>스쿠바 오버사이즈드 퍼넬넥 하프집</h3>
+                            <p>운동 전후에 최상의 편안함을 느낄 수 있는<br>
+                                오버사이즈 핏 퍼넬넥 스쿠바 후디</p>
+                            <a href="#" class="view_btn">VIEW MORE</a>
+                        </section>
+                        <p class="online_img"><img src="./images/online_img3.jpg" alt=""></p>
+                    </div>
+                </div>
+                <!--필요 시 사용(선택)-->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+        <div class="content new">
+            <a href="#"><img src="./images/new_img.jpg" alt="new"></a>
+        </div>
+    </main>
+</body>
+
+</html>
