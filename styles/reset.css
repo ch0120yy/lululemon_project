@@ -1,5 +1,7 @@
 /* HTML 초기화용 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&display=swap');
 * {box-sizing: border-box;}
 body,html,
 h1,h2,h3,h4,h5,h6,fieldset,input,button,select,textarea,
@@ -8,7 +10,7 @@ div,header,nav,aside,article,section,footer,figure,
 address,blockquote,video,iframe,hr, /* block태그 끝 */
 span,em,strong,q,a,sub,sup,details,figcaption,summary, /* inline태그 시작 */
 time,s,del,code,mark,img {
-    font-family: 'Noto Sans KR', sans-serif; /* 가장 근접한 글꼴 */
+    font-family: 'Noto Sans KR', 'Nanum Gothic', sans-serif; /* 가장 근접한 글꼴 */
     font-size: 1.0em; 
     font-weight: normal;
     font-style: normal; /* em 같은 스타일을 초기화 처리 */
