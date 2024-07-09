@@ -10,20 +10,23 @@
     <link rel="icon" href="./images/favicon96x96.png" type="image/x-icon">
     <title>룰루레몬 온라인 스토어 | 룰루레몬</title>
     <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <!-- CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!--플러그인 필수 css cdn 연결-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <!--플러그인 필수 JS cdn 연결-->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="./styles/index.css">
     <style>
-        /* 서브메뉴 숨기기 */
-        .sub_bg,
-        .gnb li .sub_menu > *,
-        .gnb li .sub_menu .sub_right > * {display:none;}
+        /* sub_bg 숨기기 */
+        .sub_bg {display: none;}
         /* 언어선택 숨기기 */
-        
+        header .header_container .lnb .lang .lang_select {display:none;}
+        /* 시리즈 숨기기 */
+        /* main .series .tab_gender_series .series_g.woman {display:none;} */
+        main .series .tab_gender_series .series_g.man {display:none;}
     </style>
 </head>
 
@@ -38,7 +41,7 @@
             <nav>
                 <div class="sub_bg"></div>
                 <ul class="gnb">
-                    <li><a href="#">여성</a>
+                    <li><a href="#">WOMAN</a>
                         <div class="sub_menu">
                             <ul class="sub_left">
                                 <li><a href="#"><strong>신제품</strong></a></li>
@@ -99,7 +102,7 @@
                             </div>
                         </div> <!-- e:여성 sub_menu -->
                     </li> <!-- 여성 -->
-                    <li><a href="#">남성</a>
+                    <li><a href="#">MAN</a>
                         <div class="sub_menu">
                             <ul class="sub_left">
                                 <li><a href="#"><strong>신제품</strong></a></li>
@@ -163,7 +166,7 @@
                             </div>
                         </div> <!-- e:남성sub_menu -->
                     </li> <!-- 남성 -->
-                    <li><a href="#">액세서리</a>
+                    <li><a href="#">ACCESSORY</a>
                         <div class="sub_menu">
                             <ul class="sub_left">
                                 <li><a href="#"><strong>신제품</strong></a></li>
@@ -210,7 +213,7 @@
                             </div>
                         </div> <!-- e:액세서리 sub_menu -->
                     </li> <!-- 액세서리 -->
-                    <li><a href="#">커뮤니티</a>
+                    <li><a href="#">COMMUNITY</a>
                         <div class="sub_menu">
                             <ul class="community_g">
                                 <li><a href="#">공지사항</a></li>
@@ -271,15 +274,15 @@
                 <div class="swiper-slide main_bnr2">
                     <div class="gradient"></div>
                     <div class="bnr_txt">
-                        <h1>움직임에 집중할 수 있는<br>Align™ 컬렉션</h1>
-                        <p>가벼움으로 수련에 집중해 보세요</p>
+                        <h1>모든 순간을 자신 있게,<br>ShowZero™ 폴로</h1>
+                        <p>땀자국 걱정 없이 오직 샷에만 집중해 보세요</p>
                     </div>
                 </div>
                 <div class="swiper-slide main_bnr3">
                     <div class="gradient"></div>
                     <div class="bnr_txt">
-                        <h1>모든 순간을 자신 있게,<br>ShowZero™ 폴로</h1>
-                        <p>땀자국 걱정 없이 오직 샷에만 집중해 보세요</p>
+                        <h1>움직임에 집중할 수 있는<br>Align™ 컬렉션</h1>
+                        <p>가벼움으로 수련에 집중해 보세요</p>
                     </div>
                 </div>
                 <div class="swiper-slide main_bnr4">
@@ -294,52 +297,111 @@
             <div class="page_btn">
                 <div class="swiper-pagination"></div>
                 <div class="play_pause">
-                    <div class="swiper-pause"><img src="./images/pause_btn.svg" alt="정지"></div>
-                    <div class="swiper-play"><img src="./images/play_btn.svg" alt="재생"></div>
+                    <button type="button" class="swiper-pause"><img src="./images/pause_btn.svg" alt="정지"></button>
+                    <button type="button" class="swiper-play"><img src="./images/play_btn.svg" alt="재생"></button>
                 </div>
             </div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         </div> <!-- e:main_bnr_g -->
-        <div class="content series">
-            <h2 class="sub_title">시리즈</h2>
-            <ul class="tab_gender_g">
-                <li class="tab_gender woman">
-                    <a href="#">여성</a>
-                    <div class="series_g">
-                        <a href="#" class="series_content">
-                            <h3 class="bg_txt"><strong>Summer</strong><br>Collection</h3>
-                            <p>부드러운 착용감과 탁월한 신축성, 상큼한<br>스타일까지 더한 여름 콜렉션</p>
-                        </a>
-                        <a href="#" class="series_content">
-                            <h3 class="bg_txt">Align™ Collection</h3>
-                            <p>버터를 입은 것처럼 부드럽게 몸을 감싸주고<br>몸의 정렬을 잡아주는 얼라인 콜렉션</p>
-                        </a>
-                        <a href="#" class="series_content">
-                            <h3 class="bg_txt">Bend This</h3>
-                            <p>앞뒤를 바꿔 자유롭게 레이어링을 할 수 있는<br>Bend This 언더웨어</p>
+        <div class="content best_sell">
+            <section class="sub_title_g">
+                <h2 class="sub_title">Best Seller</h2>
+                <a href="#" class="all_view"><span>VIEW MORE</span><img src="./images/all_view_arrow.svg" alt=""></a>
+            </section>
+            <div class="swiper" id="best_sell_g">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#" class="item">
+                            <p class="item_img"><img src="./images/bst_itm_img1.jpg" alt=""></p>
+                            <h3 class="item_title">룰루레몬 Align™ 리브드 하이라이즈 팬츠 24" 아시아 핏</h3>
+                            <p class="item_price">169,000 ~ 278,000</p>
                         </a>
                     </div>
-                </li> <!-- e:tab_gender woman -->
-                <li class="tab_gender man">
-                    <a href="#">남성</a>
-                    <div class="series_g">
-                        <a href="#" class="series_content">
-                            <h3 class="bg_txt"><strong>Summer</strong><br>Collection</h3>
-                            <p>달라붙지 않는 디자인과 통기성 소재로<br>시원한 여름을 보낼 수 있는 콜렉션</p>
-                        </a>
-                        <a href="#" class="series_content">
-                            <h3 class="bg_txt">ABC Collection</h3>
-                            <p>ABC™ 설계를 적용해 상상 이상의<br>편안함을 주는 캐주얼 팬츠</p>
-                        </a>
-                        <a href="#" class="series_content">
-                            <h3 class="bg_txt">Metal Vent Tech</h3>
-                            <p>심리스와 Silverescent™ 테크놀로지로<br>쾌적함을 느낄 수 있는 콜렉션</p>
+                    <div class="swiper-slide">
+                        <a href="#" class="item">
+                            <p class="item_img"><img src="./images/bst_itm_img2.jpg" alt=""></p>
+                            <h3 class="item_title">디파인 재킷 Nulu</h3>
+                            <p class="item_price">184,000 <del>184,000</del></p>
                         </a>
                     </div>
-                </li> <!-- e:tab_gender man -->
-            </ul>
-        </div> <!-- e:content series -->
+                    <div class="swiper-slide">
+                        <a href="#" class="item">
+                            <p class="item_img"><img src="./images/bst_itm_img3.jpg" alt=""></p>
+                            <h3 class="item_title">셔드 Nulu 미디 탱크 드레스</h3>
+                            <p class="item_price">97,000 ~ 138,000</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="item">
+                            <p class="item_img"><img src="./images/bst_itm_img4.jpg" alt=""></p>
+                            <h3 class="item_title">메탈 벤트 테크 숏슬리브 셔츠 업데이트 핏</h3>
+                            <p class="item_price">93,000</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="item">
+                            <p class="item_img"><img src="./images/bst_itm_img5.jpg" alt=""></p>
+                            <h3 class="item_title">페이스 브레이커 라이너리스 쇼츠 7"</h3>
+                            <p class="item_price">65,000 ~ 93,000</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="item">
+                            <p class="item_img"><img src="./images/bst_itm_img6.jpg" alt=""></p>
+                            <h3 class="item_title">스쿠바 오버사이즈드 풀집</h3>
+                            <p class="item_price">147,000 ~ 184,000</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="item">
+                            <p class="item_img"><img src="./images/bst_itm_img7.jpg" alt=""></p>
+                            <h3 class="item_title">원더 트레인 스트래피 레이서 브라 라이트 서포트, A/B컵</h3>
+                            <p class="item_price"><del class="price_cancle">78,000</del><span>55,000</span></p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="item">
+                            <p class="item_img"><img src="./images/bst_itm_img8.jpg" alt=""></p>
+                            <h3 class="item_title">에볼루션 코튼 피케 폴로 셔츠</h3>
+                            <p class="item_price">88,000 ~ 125,000</p>
+                        </a>
+                    </div>
+                </div>
+                <!--필요 시 사용(선택)-->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-scrollbar"></div>
+            </div> <!-- e:best_sell_g -->
+        </div> <!-- e:content best_sell -->
+        <div class="swiper-container" id="series_g">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide series_bnr">
+                    <h1>Summer<br>Collection</h1>
+                    <p>썸머 컬렉션</p>
+                    <a href="#" class="view_btn"><span>VIEW MORE</span><img src="./images/view_more_plust.svg" alt=""></a>
+                </div>
+                <div class="swiper-slide series_bnr">
+                    <h1>Align™<br>Collection</h1>
+                    <p>얼라인 컬렉션</p>
+                    <a href="#" class="view_btn"><span>VIEW MORE</span><img src="./images/view_more_plust.svg" alt=""></a>
+                </div>
+                <div class="swiper-slide series_bnr">
+                    <h1>Summer<br>Collection</h1>
+                    <p>썸머 컬렉션</p>
+                    <a href="#" class="view_btn"><span>VIEW MORE</span><img src="./images/view_more_plust.svg" alt=""></a>
+                </div>
+                <div class="swiper-slide series_bnr">
+                    <h1>Align™<br>Collection</h1>
+                    <p>얼라인 컬렉션</p>
+                    <a href="#" class="view_btn"><span>VIEW MORE</span><img src="./images/view_more_plust.svg" alt=""></a>
+                </div>
+            </div>
+            <!--필요 시 사용(선택)-->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div> <!-- e:series_g -->
+
         <div class="content online_only">
             <div class="swiper" id="online_only_g">
                 <div class="swiper-wrapper">
@@ -407,80 +469,6 @@
                 </div>
             </section> <!-- e:item_g -->
         </div> <!-- e:content new -->
-        <div class="content best_sell">
-            <h2 class="sub_title">베스트 셀러</h2>
-            <div class="swiper" id="best_sell_g">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a href="#" class="item">
-                            <p class="item_img"><img src="./images/bst_itm_img1.jpg" alt=""></p>
-                            <h3 class="item_title">룰루레몬 Align™ 리브드 하이라이즈 팬츠 24" 아시아 핏</h3>
-                            <p class="item_price">169,000 ~ 278,000</p>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#" class="item">
-                            <p class="item_img"><img src="./images/bst_itm_img2.jpg" alt=""></p>
-                            <h3 class="item_title">디파인 재킷 Nulu</h3>
-                            <p class="item_price">184,000</p>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#" class="item">
-                            <p class="item_img"><img src="./images/bst_itm_img3.jpg" alt=""></p>
-                            <h3 class="item_title">셔드 Nulu 미디 탱크 드레스</h3>
-                            <p class="item_price">97,000 ~ 138,000</p>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#" class="item">
-                            <p class="item_img"><img src="./images/bst_itm_img4.jpg" alt=""></p>
-                            <h3 class="item_title">메탈 벤트 테크 숏슬리브 셔츠 업데이트 핏</h3>
-                            <p class="item_price">93,000</p>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#" class="item">
-                            <p class="item_img"><img src="./images/bst_itm_img5.jpg" alt=""></p>
-                            <h3 class="item_title">페이스 브레이커 라이너리스 쇼츠 7"</h3>
-                            <p class="item_price">65,000 ~ 93,000</p>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#" class="item">
-                            <p class="item_img"><img src="./images/bst_itm_img6.jpg" alt=""></p>
-                            <h3 class="item_title">스쿠바 오버사이즈드 풀집</h3>
-                            <p class="item_price">147,000 ~ 184,000</p>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#" class="item">
-                            <p class="item_img"><img src="./images/bst_itm_img7.jpg" alt=""></p>
-                            <h3 class="item_title">원더 트레인 스트래피 레이서 브라 라이트 서포트, A/B컵</h3>
-                            <p class="item_price"><del class="price_cancle">78,000</del><span>55,000</span></p>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#" class="item">
-                            <p class="item_img"><img src="./images/bst_itm_img8.jpg" alt=""></p>
-                            <h3 class="item_title">에볼루션 코튼 피케 폴로 셔츠</h3>
-                            <p class="item_price">88,000 ~ 125,000</p>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#" class="item">
-                            <p class="item_img"><img src="./images/bst_itm_img9.jpg" alt=""></p>
-                            <h3 class="item_title">원더러스트 백팩 25L</h3>
-                            <p class="item_price">198,000</p>
-                        </a>
-                    </div>
-                </div>
-                <!--필요 시 사용(선택)-->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-scrollbar"></div>
-            </div> <!-- e:best_sell_g -->
-        </div> <!-- e:content best_sell -->
         <div class="content event_section">
             <div class="swiper" id="event_bnr_g"> <!-- position:relative -->
                 <div class="swiper-wrapper">
